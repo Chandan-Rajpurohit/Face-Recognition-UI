@@ -2,8 +2,8 @@ services:
   - type: web
     name: face-recog
     env: python
-    buildCommand: pip install -r backend/requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port 10000
     envVars:
       - key: PYTHON_VERSION
         value: 3.10
